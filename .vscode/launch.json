@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Next.js Server",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "pnpm debug"
+        },
+        {
+            "name": "Next.js Server (Debugger)",
+            "type": "node",
+            "request": "attach",
+            "skipFiles": ["<node_internals>/**"],
+            "port": 9229
+        }
+    ]
+}
