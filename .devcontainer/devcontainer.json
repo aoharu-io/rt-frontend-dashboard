@@ -1,0 +1,19 @@
+{
+    "name": "RT Frontend",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node",
+    "postCreateCommand": "npm install -g npm && npm install -g pnpm && pnpm setup && pnpm install",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "unifiedjs.vscode-mdx"
+            ]
+        }
+    },
+    "portsAttributes": {
+        "3000": {
+            "label": "Next.js Default HTTP Port",
+            "onAutoForward": "notify"
+        }
+    }
+}
